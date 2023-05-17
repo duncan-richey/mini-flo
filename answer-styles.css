@@ -1,0 +1,227 @@
+.all-answers {
+    position: relative;
+}
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+      
+}
+
+.answer-reveal {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-tile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+   
+    font-size: 1.6rem;
+    padding-top: 1px;
+
+    background-color: #ffffff;
+    border: 2px solid #878a8c;
+    color: black;
+    perspective: 600px;  /* This gives the container some 3D perspective */
+
+    cursor: move;
+   
+}
+
+
+.clue-letter {
+    background-color: #6aaa64;
+    color: white;
+}
+
+@keyframes flip {
+    0% { 
+        transform: rotateX(0deg); 
+        box-shadow: 0 0 5px rgba(0,0,0,0.25); 
+        background-color: #ffffff; 
+        color: black; 
+    }
+    
+    50% { 
+        background-color: #6aaa64; 
+        color: #6aaa64;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    }
+    100% { 
+        transform: rotateX(1080deg); 
+        background-color: #6aaa64; 
+        box-shadow: 0 0 5px rgba(0,0,0,0.25);
+        color: white; 
+    }
+}
+
+@keyframes final-flip {
+    0% { 
+        transform: rotateX(0deg); 
+        box-shadow: 0 0 5px rgba(0,0,0,0.25); 
+        background-color: #6aaa64; 
+        color: white; 
+    }
+
+    25% { 
+      
+        box-shadow: 0 0 5px rgba(0,0,0,0.25); 
+        background-color: #6aaa6455; 
+        color: rgba(255, 255, 255, 0.372); 
+    }
+
+
+    
+    50% { 
+        background-color: #b827293d; 
+        color: #b827293d;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    }
+    100% { 
+        transform: rotateX(1080deg); 
+        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
+      
+        color: #b82729; 
+        border-color: #b82729;
+    
+       
+   }
+}
+
+
+.reveal-image {
+    width: 100%;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 4s; /* adjust as needed */
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.to-flip {
+    animation-fill-mode: forwards;  /* This will make the animation stick to its end state */
+    cursor: move;
+}
+
+
+
+.musical-reveal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+}
+
+.scramble-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 420px;  
+}
+
+.first-word, .second-word {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.scramble-container .box{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #878a8c;
+
+    background-color: white;
+    font-size: 1.6rem;
+        
+}
+
+
+.box {
+    display: flex;
+    flex-grow: inherit;
+    justify-content: center;
+    align-items: center;   
+
+    background: white;
+
+    text-align: center;
+    text-transform: uppercase;
+    caret-color: transparent;
+}
+
+.box:focus {
+    outline: none;
+    background-color:  #6aaa64 !important; 
+    opacity: 0.5;
+}
+
+
+/* Hide cursor */
+.box::-webkit-input-placeholder { color: transparent; }
+.box:-moz-placeholder { color: transparent; }
+.box::-moz-placeholder { color: transparent; }
+.box:-ms-input-placeholder { color: transparent; }
+
+
+/* @keyframes fallRotate {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+} */
+
+@keyframes colorChange {
+    0% {
+        background-color: initial;
+    }
+
+    25% { 
+          box-shadow: 0 0 5px rgba(0,0,0,0.25); 
+        background-color: #6aaa6455; 
+        color: rgba(255, 255, 255, 0.372); 
+    }
+
+    50% { 
+        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
+        color: #b82729; 
+        border-color: #b82729;
+    }
+
+    100% {
+        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
+        color: #b82729; 
+        border-color: #b82729;
+    }
+}
+
+
+
+
+

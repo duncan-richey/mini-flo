@@ -15,11 +15,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }   
 
+
+
 /* Set background color */
 body {
     background-color: #f4f4f4;
-    -webkit-font-smoothing: antialiased;
     min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 a {
@@ -150,7 +158,12 @@ h1 {
     grid-row-gap: 32px;
     margin: 15px 20px;
     justify-content: space-between;
+
+    max-width: 890px;
+
 }
+
+
 
 /* Style the mini crossword items */
 .mini-item {
@@ -182,29 +195,37 @@ h1 {
 }
 
 #two-mini {
-    background-color: #a3ffc5;
+    background-color: #e3e3e1;
 }
 
 #three-mini {
-    background-color: #fff47d;
+    background-color: #a3c9ff;
 }
 
 #four-mini {
-    background-color: #eaa3ff;
+    background-color: #e3e3e1;
 }
 
 #five-mini {
-    background-color: #ffbc75;
+    background-color: #a3c9ff;
 }
 
 #six-mini {
-    background-color: #ffa3ae;
+    background-color: #e3e3e1;
 }
 
 .mini-illustration {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(/images/mini.svg);
+    height: 62px;
+    background-size: contain;
+}
+
+.wordle-illustration {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/images/wordle-icon.svg);
     height: 62px;
     background-size: contain;
 }
