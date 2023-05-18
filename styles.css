@@ -216,7 +216,7 @@ h1 {
 .mini-illustration {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/images/mini.svg);
+    background-image: url(/images/wordle-icon.svg);
     height: 62px;
     background-size: contain;
 }
