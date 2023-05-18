@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wordle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../images/wordle-icon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Comfortaa:wght@400;600;700&family=Creepster&family=Rokkitt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wordle-style.css"/>
+
+
+</head>
+    <body>
+        <div class="game-page">
+
+        <header class="title-container">
+            <div class="game-home-icon"><a href="../../index.html"><img src="../../images/back-icon.png" alt=""></a></div>
+            <h1 class="wordle-header-text">Wordle</h1>
+        </header>
+
+        <div class="game-container">
+            <div class="message-container"></div>
+            <div class="board-container">
+                <div class="tile-container"></div>
+            </div>
+           
+            <div class="keyboard-all-rows" role="group" aria-label="Keyboard">
+                <div class="keyboard-row-1">
+                    <button type="button" data-key="q" class="key">q</button>
+                    <button type="button" data-key="w" class="key">w</button>
+                    <button type="button" data-key="e" class="key">e</button>
+                    <button type="button" data-key="r" class="key">r</button>
+                    <button type="button" data-key="t" class="key">t</button>
+                    <button type="button" data-key="y" class="key">y</button>
+                    <button type="button" data-key="u" class="key">u</button>
+                    <button type="button" data-key="i" class="key">i</button>
+                    <button type="button" data-key="o" class="key">o</button>
+                    <button type="button" data-key="p" class="key">p</button>
+                </div>
+                <div class="keyboard-row-2">
+                    <div data-testid="spacer" class="key-half"></div>
+                    <button type="button" data-key="a" class="key">a</button>
+                    <button type="button" data-key="s" class="key">s</button>
+                    <button type="button" data-key="d" class="key">d</button>
+                    <button type="button" data-key="f" class="key">f</button>
+                    <button type="button" data-key="g" class="key">g</button>
+                    <button type="button" data-key="h" class="key">h</button>
+                    <button type="button" data-key="j" class="key">j</button>
+                    <button type="button" data-key="k" class="key">k</button>
+                    <button type="button" data-key="l" class="key">l</button>
+                    <div data-testid="spacer" class="key-half"></div>
+                </div>
+                <div class="keyboard-row-3">
+                    <button type="button" data-key="↵" id='enter' class="key">enter</button>
+                    <button type="button" data-key="z" class="key">z</button>
+                    <button type="button" data-key="x" class="key">x</button>
+                    <button type="button" data-key="c" class="key">c</button>
+                    <button type="button" data-key="v" class="key">v</button>
+                    <button type="button" data-key="b" class="key">b</button>
+                    <button type="button" data-key="n" class="key">n</button>
+                    <button type="button" data-key="m" class="key">m</button>
+                    <button type="button" data-key="←" id='back' class="key">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" class="game-icon" data-testid="icon-backspace">
+                    <path fill="var(--color-tone-1)" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
+                    </svg>
+                    </button>
+                    </div>
+                    
+                    </div>
+            
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

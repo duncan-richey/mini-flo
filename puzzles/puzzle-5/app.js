@@ -2,15 +2,15 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.keyboard-all-rows')
 const messageDisplay = document.querySelector('.message-container')
 
-const wordle = 'DANCE'
+const wordle = 'HUDSON'
 
 const guessRows = [
-    ['', '', '', '', ''],
-    ['', '', '', '', ''],
-    ['', '', '', '', ''],
-    ['', '', '', '', ''],
-    ['', '', '', '', ''],
-    ['', '', '', '', '']
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', ''],
+    ['', '', '', '', '', '']
 ]
 
 let currentRow = 0
@@ -57,7 +57,7 @@ const handleClick = (letter) => {
 }
 
 const addLetter = (letter) => {
-    if (currentTile < 5 && currentRow < 6) {
+    if (currentTile < 6 && currentRow < 6) {
         const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
         tile.textContent = letter
         guessRows[currentRow][currentTile] = letter
@@ -78,7 +78,7 @@ const deleteLetter = () => {
 
 const checkRow = () => {
     const guess = guessRows[currentRow].join('')
-    if (currentTile > 4) {
+    if (currentTile > 5) {
            
     flipTile()
     
@@ -88,17 +88,17 @@ const checkRow = () => {
             isGameOver = true
             return
         } else {
-            if (currentRow >= 5) {
+            if (currentRow >= 6) {
                 isGameOver = true
                 showMessage('Sashay away')
                 return
             }
-            if (currentRow < 5) {
+            if (currentRow < 6) {
                 currentRow++
                 currentTile = 0
             }
         }
-    }, 2500)
+    }, 2800)
 }
 }
 
@@ -143,7 +143,7 @@ const flipTile = () => {
             tile.classList.add('flip')
             tile.classList.add(guess[index].color)
             addColorToKey(guess[index].letter, guess[index].color)
-        }, 500 * index)
+        }, 400 * index)
     })
 }
 

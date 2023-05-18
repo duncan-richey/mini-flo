@@ -39,6 +39,12 @@ a {
     font: inherit;
 }   
 
+br {
+    display: block;
+    content: "";
+    margin: 0.25rem 0;
+}
+
 /* Style the banner */
 /* .banner {
     color: black;
@@ -125,12 +131,11 @@ h1 {
 }
 
 .progressIcon {
-    background-image: url(images/mini-icon.svg);
+    background-image: url(images/wordle-icon.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 75px;
-    margin-bottom: 0.5em;
-    width: 75px;
+    height: 100px;
+    width: 100px;
 }
 
 .title {
