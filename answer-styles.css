@@ -1,13 +1,22 @@
+/* font-family: 'Bevan', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Rokkitt', serif; */
+
 .all-answers {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 .answers-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-      
+    margin-top: 10px;
+         
 }
 
 .answer-reveal {
@@ -28,8 +37,9 @@
     height: 32px;
     margin-right: 4px;
    
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding-top: 1px;
+    font-weight: 700;
 
     background-color: #ffffff;
     border: 2px solid #878a8c;
@@ -40,9 +50,31 @@
    
 }
 
+#flip-button {
+    background-color: white;
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 44px;
+    letter-spacing: .25px;
+    height: 44px;
+    color: #333;
+    border: 1px solid #ccc;
+    font-weight: 700;
+  
+    line-height: 1.3rem;
+
+    font-family: 'Comfortaa', cursive;
+}
 
 .clue-letter {
-    background-color: #6aaa64;
+    background-color: #b82729;
     color: white;
 }
 
@@ -55,19 +87,19 @@
     }
     
     50% { 
-        background-color: #6aaa64; 
-        color: #6aaa64;
+        background-color: #b82729; 
+        color: #b82729;
         box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     }
     100% { 
         transform: rotateX(1080deg); 
-        background-color: #6aaa64; 
+        background-color: radial-gradient(circle, #b82729, #7a0e10); 
         box-shadow: 0 0 5px rgba(0,0,0,0.25);
         color: white; 
     }
 }
 
-@keyframes final-flip {
+/* @keyframes final-flip {
     0% { 
         transform: rotateX(0deg); 
         box-shadow: 0 0 5px rgba(0,0,0,0.25); 
@@ -98,7 +130,7 @@
     
        
    }
-}
+} */
 
 
 .reveal-image {
@@ -124,13 +156,11 @@ img {
 }
 
 
-
 .musical-reveal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: fit-content;
 
 }
@@ -154,7 +184,6 @@ img {
     width: 32px;
     height: 32px;
     border: 2px solid #878a8c;
-
     background-color: white;
     font-size: 1.6rem;
         
@@ -166,17 +195,16 @@ img {
     flex-grow: inherit;
     justify-content: center;
     align-items: center;   
-
     background: white;
-
     text-align: center;
     text-transform: uppercase;
     caret-color: transparent;
+    font-family: 'Creepster', cursive;
 }
 
 .box:focus {
     outline: none;
-    background-color:  #6aaa64 !important; 
+    background-color:  #b82729 !important; 
     opacity: 0.5;
 }
 
@@ -188,18 +216,9 @@ img {
 .box:-ms-input-placeholder { color: transparent; }
 
 
-/* @keyframes fallRotate {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-    }
-} */
-
 @keyframes colorChange {
     0% {
-        background-color: initial;
+      
     }
 
     25% { 

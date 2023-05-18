@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         box.addEventListener('blur', function() {
             if(this.value.length === this.maxLength) {
-                this.style.backgroundColor = '#6aaa64';
+                this.style.backgroundColor = '#b82729';
                 this.style.color = 'white' // Replace 'yourColor' with the color you want
             } else {
                 this.style.backgroundColor = 'initial'; // Resets to original color if the box is empty
