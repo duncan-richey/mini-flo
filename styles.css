@@ -125,7 +125,7 @@ h1 {
 }
 
 .progressIcon {
-    background-image: url(/images/mini-icon.svg);
+    background-image: url(./images/mini-icon.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 75px;
@@ -216,7 +216,7 @@ h1 {
 .mini-illustration {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/images/wordle-icon.svg);
+    background-image: url(./images/wordle-icon.svg);
     height: 62px;
     background-size: contain;
 }
@@ -224,7 +224,7 @@ h1 {
 .wordle-illustration {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/images/wordle-icon.svg);
+    background-image: url(./images/wordle-icon.svg);
     height: 62px;
     background-size: contain;
 }
