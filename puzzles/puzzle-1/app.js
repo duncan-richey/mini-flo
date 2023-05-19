@@ -33,7 +33,6 @@ guessRows.forEach((guessRow, guessRowIndex) => {
 const keyboardKeys = document.querySelectorAll('.key')
 
 keyboardKeys.forEach(keyButton => {
-
     const letter = keyButton.getAttribute('data-key').toUpperCase()
     keyButton.addEventListener('click', () => handleClick(letter))
 
@@ -110,9 +109,15 @@ const showMessage = (message) => {
     setTimeout(() => messageDisplay.removeChild(messageElement), 8000)
 }
 
-const addColorToKey = (keyLetter, color) => {
-    const key = document.getElementById(keyLetter)
-    key.classList.add(color)
+const colorKey = (letter, color) => {
+    const key = document.getElementById('key-' + letter);
+    if (key) {
+        // If you want to overwrite the previous color each time, first remove all potential color classes
+        key.classList.remove('green-overlay', 'yellow-overlay', 'grey-overlay');
+
+        // Now, add the new color class
+        key.classList.add(color);
+    }
 }
 
 const flipTile = () => {
@@ -142,7 +147,7 @@ const flipTile = () => {
         setTimeout(() => {
             tile.classList.add('flip')
             tile.classList.add(guess[index].color)
-            addColorToKey(guess[index].letter, guess[index].color)
+            colorKey(guess[index].letter, guess[index].color)
         }, 500 * index)
     })
 }
