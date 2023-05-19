@@ -63,7 +63,6 @@ body, html {
 }
 
 
-
 .wordle-header-text {
     margin: 0;
     font-size: 1.5rem;
@@ -71,6 +70,11 @@ body, html {
     font-family: 'Bevan', cursive;
     text-align: center;
     flex: 1;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
