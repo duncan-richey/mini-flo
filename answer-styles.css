@@ -16,6 +16,8 @@ font-family: 'Rokkitt', serif; */
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    overflow-x: hidden;
+
          
 }
 

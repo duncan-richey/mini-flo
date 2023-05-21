@@ -17,7 +17,7 @@ body, html {
     width: 100%;
     line-height: 1;
     display: block;
-    font-family: 'Comfortaa', cursive;}
+    font-family: 'Rokkitt', serif;}
 
     body.scrollable {
     overflow-y: unset;
@@ -113,7 +113,6 @@ a{
 
 
 .tile {
-
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -125,8 +124,7 @@ a{
     box-sizing: border-box;
     text-transform: uppercase;
     user-select: none;
-
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Rokkitt', serif;
 }
 
 

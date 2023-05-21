@@ -26,6 +26,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     background-color: #f4f4f4;
     min-height: 100vh;
+    overflow-x: hidden;
+   
 }
 
 main {
@@ -45,28 +47,6 @@ br {
     margin: 0.25rem 0;
 }
 
-/* Style the banner */
-/* .banner {
-    color: black;
-    padding: 0.5rem;
-    text-align: center;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    font-weight: 700;
-    font-size: 28px;
-        
-    height: 45px;
-    width: 100%;
-    background: #fff;
-    padding-right: 16px;
-    overflow: hidden;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.2);
-   
-} */
-
 /* Style the main header */
 h1 {
     text-align: center;
@@ -83,7 +63,6 @@ h1 {
 }
 
 /* Hero sections */
-
 .hub-welcome-sections {
     display: flex;
     flex-direction: row;
@@ -295,3 +274,21 @@ footer {
     list-style: none;
     padding-left: 1rem;
 }
+
+
+/* CSS for smaller devices like iPhone SE (width less than or equal to 375px) */
+@media only screen and (max-width: 375px) {
+    /* Insert the CSS rules here */
+}
+
+/* CSS for larger devices like iPhone 12 (width less than or equal to 414px) */
+@media only screen and (max-width: 414px) {
+    /* Insert the CSS rules here */
+}
+
+/* CSS for medium-sized devices like iPhone XR (width less than or equal to 414px) */
+@media only screen and (max-width: 828px) {
+    /* Insert the CSS rules here */
+}
+
+
