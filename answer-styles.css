@@ -10,22 +10,20 @@ font-family: 'Rokkitt', serif; */
     align-items: center;
     margin-top: 30px;
 }
+
 .answers-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    overflow-x: hidden;
-
+    overflow: hidden;
          
 }
 
 .answer-reveal {
     margin-top: 8px;
     margin-bottom: 20px;
-    display: block;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,26 +36,22 @@ font-family: 'Rokkitt', serif; */
     width: 32px;
     height: 32px;
     margin-right: 4px;
-   
     font-size: 1.2rem;
     padding-top: 1px;
     font-weight: 700;
-
     background-color: #ffffff;
     border: 2px solid #878a8c;
     color: black;
     perspective: 600px;  /* This gives the container some 3D perspective */
-
     cursor: move;
-   
+    animation-fill-mode: forwards;
+           
 }
 
 #flip-button {
     background-color: white;
     padding: 0.5rem 1rem;
-
     cursor: pointer;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,10 +63,15 @@ font-family: 'Rokkitt', serif; */
     color: #333;
     border: 1px solid #ccc;
     font-weight: 700;
-  
     line-height: 1.3rem;
-
     font-family: 'Comfortaa', cursive;
+    margin-bottom: 15px;
+  
+}
+
+#flip-button,
+.scramble-instructions {
+  transition: opacity 0.5s ease;
 }
 
 .clue-letter {
@@ -95,44 +94,11 @@ font-family: 'Rokkitt', serif; */
     }
     100% { 
         transform: rotateX(1080deg); 
-        background-color: radial-gradient(circle, #b82729, #7a0e10); 
+        background-color: #b82729; 
         box-shadow: 0 0 5px rgba(0,0,0,0.25);
         color: white; 
     }
 }
-
-/* @keyframes final-flip {
-    0% { 
-        transform: rotateX(0deg); 
-        box-shadow: 0 0 5px rgba(0,0,0,0.25); 
-        background-color: #6aaa64; 
-        color: white; 
-    }
-
-    25% { 
-      
-        box-shadow: 0 0 5px rgba(0,0,0,0.25); 
-        background-color: #6aaa6455; 
-        color: rgba(255, 255, 255, 0.372); 
-    }
-
-
-    
-    50% { 
-        background-color: #b827293d; 
-        color: #b827293d;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-    }
-    100% { 
-        transform: rotateX(1080deg); 
-        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
-      
-        color: #b82729; 
-        border-color: #b82729;
-    
-       
-   }
-} */
 
 
 .reveal-image {
@@ -164,6 +130,22 @@ img {
     align-items: center;
     justify-content: center;
     width: fit-content;
+    background-color: #f9b9b972;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 5px;
+
+}
+
+.scramble-instructions{
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-top: 10px;
+    border-top: #3333338c dashed;
 
 }
 
@@ -172,12 +154,17 @@ img {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    width: 420px;  
+    width: 300px;
+    height: 100px;
+      
 }
 
 .first-word, .second-word {
     display: flex;
-    gap: 6px;
+    gap: 6px;   
+}
+
+.second-word {
     margin-top: 10px;
 }
 
@@ -188,9 +175,7 @@ img {
     border: 2px solid #878a8c;
     background-color: white;
     font-size: 1.6rem;
-        
 }
-
 
 .box {
     display: flex;
@@ -216,33 +201,6 @@ img {
 .box:-moz-placeholder { color: transparent; }
 .box::-moz-placeholder { color: transparent; }
 .box:-ms-input-placeholder { color: transparent; }
-
-
-@keyframes colorChange {
-    0% {
-      
-    }
-
-    25% { 
-          box-shadow: 0 0 5px rgba(0,0,0,0.25); 
-        background-color: #6aaa6455; 
-        color: rgba(255, 255, 255, 0.372); 
-    }
-
-    50% { 
-        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
-        color: #b82729; 
-        border-color: #b82729;
-    }
-
-    100% {
-        background: radial-gradient(circle,  #b82729,  #8b1d1d); 
-        color: #b82729; 
-        border-color: #b82729;
-    }
-}
-
-
 
 
 

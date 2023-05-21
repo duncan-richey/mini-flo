@@ -46,9 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
             if (allCorrect) {
                 console.log("Correct answer!");
 
+                flipButton.style.opacity = 0;
+                scrambleInstructions.style.opacity = 0;
+
                 // Get all the tiles
                 var allTiles = Array.from(document.querySelectorAll('.box, .answer-tile-container'));
-                allTiles.push(scrambleInstructions);
+              /*   allTiles.push(scrambleInstructions);
+                allTiles.push(flipButton); */
 
                  allTiles.forEach(tile => {
                     // Generate random values
@@ -65,12 +69,16 @@ document.addEventListener("DOMContentLoaded", function() {
                         duration: 3000,
                         opacity: [1,0],
                         complete: function() {
-                            tile.style.visibility = 'hidden'; // Hide the tile after the animation
+                            tile.style.visibility = 'hidden';
+                            // Hide the tile after the animation
                         },
                     });
                 });
-                
 
+               
+                
+                var musicalReveal = document.querySelector('.musical-reveal');
+                musicalReveal.style.backgroundColor = "transparent";
                              
 
                 // Start revealing the image after 1 second (when the color change completes)
@@ -94,8 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 this.style.backgroundColor = '#b82729';
                 this.style.color = 'white' // Replace 'yourColor' with the color you want
             } else {
-                this.style.backgroundColor = 'initial'; // Resets to original color if the box is empty
-                this.style.color = 'initial';
+                this.style.backgroundColor = 'white'; // Resets to original color if the box is empty
+                this.style.color = 'white';
             }
         });
     });

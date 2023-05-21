@@ -20,6 +20,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }   
 
+.some-element {
+    max-width: 100%;
+}
+
+
 
 
 /* Set background color */
@@ -27,7 +32,8 @@ body {
     background-color: #f4f4f4;
     min-height: 100vh;
     overflow-x: hidden;
-   
+    margin: 0;
+    padding: 0;   
 }
 
 main {
@@ -157,8 +163,7 @@ h1 {
     border: solid 1px #dcdcdc;
     background: #fff;
     text-align: center;
-    overflow: hidden;
-  
+    overflow: hidden;  
     flex-wrap: nowrap;
     height: 100%;
     align-items: stretch;
@@ -240,9 +245,7 @@ h1 {
 .play-button {
     background-color: white;
     padding: 0.5rem 1rem;
-
     cursor: pointer;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +259,6 @@ h1 {
     font-weight: 700;
     margin: 0 12px 16px; /* this is responsive to the screen size on their site */
     line-height: 1.3rem;
-
     font-family: 'Comfortaa', cursive;
 }
 
