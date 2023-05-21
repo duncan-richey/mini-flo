@@ -117,6 +117,8 @@ const colorKey = (letter, color) => {
 
         // Now, add the new color class
         key.classList.add(color);
+
+        key.style.color = color === 'green-overlay-key' ? 'yellow-overlay-key' : 'white'; // Replace 'red' and 'blue' with the desired text colors
     }
 }
 
@@ -148,7 +150,7 @@ const flipTile = () => {
             tile.classList.add('flip')
             tile.classList.add(guess[index].color)
             colorKey(guess[index].letter, guess[index].color)
-        }, 500 * index)
+        }, 300 * index)
     })
 }
 

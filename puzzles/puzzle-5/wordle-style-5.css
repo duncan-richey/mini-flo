@@ -150,7 +150,7 @@ a{
 #enter {
     flex: 1.5;
     font-size: 12px;
-    font-weight: 1000;
+    font-weight: 550;
 }
 
 #back {
@@ -167,7 +167,7 @@ a{
 
 
 .key {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cabin', sans-serif;
     font-size: 1.25em;
    
     border: 0;
@@ -187,7 +187,7 @@ a{
     text-transform: uppercase;
     -webkit-tap-highlight-color: rgba(0,0,0,.3);
    
-    font-weight: 1000;
+    font-weight: 550;
 
 }
 
@@ -236,7 +236,7 @@ a{
      font-weight: bold;
      text-transform: uppercase;
      user-select: none;
-     font-family: 'Rokkitt', serif;
+     font-family: 'Cabin', sans-serif;
  }
 
 

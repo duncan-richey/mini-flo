@@ -1,7 +1,9 @@
 /* font-family: 'Bevan', cursive;
 font-family: 'Comfortaa', cursive;
 font-family: 'Creepster', cursive;
+font-family: 'Lalezar', cursive;
 font-family: 'Rokkitt', serif; */
+
 
 * {
     margin: 0;
@@ -17,7 +19,7 @@ body, html {
     width: 100%;
     line-height: 1;
     display: block;
-    font-family: 'Rokkitt', serif;}
+    font-family: 'Comfortaa', cursive}
 
     body.scrollable {
     overflow-y: unset;
@@ -117,14 +119,14 @@ a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 1;
     font-weight: bold;
     vertical-align: middle;
     box-sizing: border-box;
     text-transform: uppercase;
     user-select: none;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 
@@ -168,7 +170,7 @@ a{
 #enter {
     flex: 1.5;
     font-size: 12px;
-    font-weight: 1000;
+    font-weight: 700;
 }
 
 #back {
@@ -185,7 +187,7 @@ a{
 
 
 .key {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cabin', sans-serif;
     font-size: 1.25em;
    
     border: 0;
@@ -205,7 +207,7 @@ a{
     text-transform: uppercase;
     -webkit-tap-highlight-color: rgba(0,0,0,.3);
    
-    font-weight: 1000;
+    font-weight: 550;
 
 }
 
