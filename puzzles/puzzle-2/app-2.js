@@ -84,7 +84,7 @@ const checkRow = () => {
     
     setTimeout(() => {
         if (wordle == guess) {
-            showMessage('Good job, Mama')
+            showMessage('Well done, Mama')
             isGameOver = true
             return
         } else {

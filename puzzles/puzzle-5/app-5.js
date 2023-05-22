@@ -57,7 +57,7 @@ const handleClick = (letter) => {
 }
 
 const addLetter = (letter) => {
-    if (currentTile < 6 && currentRow < 6) {
+    if (currentTile < 5 && currentRow < 5) {
         const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
         tile.textContent = letter
         guessRows[currentRow][currentTile] = letter
@@ -78,13 +78,13 @@ const deleteLetter = () => {
 
 const checkRow = () => {
     const guess = guessRows[currentRow].join('')
-    if (currentTile > 5) {
+    if (currentTile > 4) {
            
     flipTile()
     
     setTimeout(() => {
         if (wordle == guess) {
-            showMessage('Good job, Mama')
+            showMessage('Good job, Aunt Flo!')
             isGameOver = true
             return
         } else {
