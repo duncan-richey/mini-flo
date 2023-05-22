@@ -97,7 +97,7 @@ const checkRow = () => {
                 currentTile = 0
             }
         }
-    }, 2500)
+    }, 2000)
 }
 }
 
