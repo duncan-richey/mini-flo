@@ -139,7 +139,7 @@ img {
 
 .scramble-instructions{
     margin: 10px;
-    margin-bottom: 30px;
+   /*  margin-bottom: 30px; */
     font-size: 1rem;
     font-weight: 300;
     font-family: 'Comfortaa', cursive;
