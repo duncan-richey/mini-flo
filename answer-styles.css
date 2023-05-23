@@ -27,6 +27,7 @@ font-family: 'Rokkitt', serif; */
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .answer-tile-container {
@@ -45,6 +46,8 @@ font-family: 'Rokkitt', serif; */
     perspective: 600px;  /* This gives the container some 3D perspective */
     cursor: move;
     animation-fill-mode: forwards;
+
+    font-family: 'Cabin', cursive;
            
 }
 
